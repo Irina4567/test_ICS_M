@@ -1,0 +1,98 @@
+$width-desktop: 1200px;
+$width-notebook: 600px;
+$width-tablet: 400px;
+$width-phone: 320px;
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid gray;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-spacing: 0;
+}
+
+.table-cell {
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+  line-height: 2;
+  vertical-align: top;
+  border: 1px solid gray;
+}
+
+.button-popup {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  height: 50px;
+  color: white;
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  @media (max-width: $width-desktop) {max-width: 150px;}
+  @media (max-width: $width-notebook) {max-width: 100px; font-size: 40%; height: 30px;}
+  @media (max-width: $width-tablet) {max-width: 75px; font-size: 20%; height: 20px;}
+  @media (max-width: $width-phone) {max-width: 50px; font-size: 20%; height: 15px;}
+}
+
+.button-popup:hover {
+  opacity: 0.6;
+}
+
+#popup-message {
+  @media (max-width: $width-desktop) {
+    max-width: 80%;
+    height: 30%;}
+
+  @media (max-width: $width-notebook) {
+    max-width: 60%;
+    height: 30%;
+  }
+  @media (max-width: $width-tablet) {
+    max-width: 50%;
+    height: 20%;
+  }
+  @media (max-width: $width-phone) {
+    max-width: 30%;
+    height: 10%;
+  }
+}
+
+.blocks {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block {
+  border: 2px solid gray;
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $width-desktop) {
+    max-width: 80px;
+    height: 40%;}
+
+  @media (max-width: $width-notebook) {
+    max-width: 60px;
+    height: 30%;
+  }
+  @media (max-width: $width-tablet) {
+    max-width: 40px;
+    height: 40%;
+  }
+  @media (max-width: $width-phone) {
+    max-width: 20px;
+    height: 30%;
+  }
+}
+
